@@ -1,0 +1,19 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories.svelte';
+
+<Meta of={ButtonStories} />
+
+# Demo DocsPage with custom `MDX` content
+
+## Button
+
+There are multiple variations of button.
+
+<ArgsTable of={ButtonStories.meta} />
+
+### Accented - Primary
+
+<Canvas>
+	<Story of={ButtonStories.Primary} />
+	<Story of={ButtonStories.Secondary} />
+</Canvas>
